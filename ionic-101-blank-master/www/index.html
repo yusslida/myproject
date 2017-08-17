@@ -113,7 +113,8 @@ var sendparameters=Object.keys($scope.person).map((i)=>i+'='+$scope.person[i]).j
      })
      .finally(function(){ /* in the end*/
        $ionicLoading.hide(); /* hide loading icon*/
-     });           
+     }); 
+	 $scope.callService();
 }
   
 /*Call Service*/  
